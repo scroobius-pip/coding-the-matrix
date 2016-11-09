@@ -57,6 +57,6 @@ def andSearch(inverseIndex, query):
            return doc_id_set
     doc_id_set = inverseIndex[query[0]]
     for word in query:
-        doc_id_set = doc_id_set & inverseIndex[word]
+        doc_id_set &= inverseIndex[word]
     return doc_id_set
 
